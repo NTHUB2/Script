@@ -1,0 +1,41 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local GUI = Instance.new("ScreenGui")
+local OnOf = Instance.new("Frame")
+local On = Instance.new("TextButton")
+local Off = Instance.new("TextButton")
+
+--Properties:
+
+GUI.Name = "GUI"
+GUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+GUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+OnOf.Name = "On/Of"
+OnOf.Parent = GUI
+OnOf.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+OnOf.Position = UDim2.new(0.0484481454, 0, 0.249966264, 0)
+OnOf.Size = UDim2.new(0, 42, 0, 58)
+
+On.Name = "On"
+On.Parent = OnOf
+On.BackgroundColor3 = Color3.fromRGB(1, 88, 0)
+On.Position = UDim2.new(0.149439126, 0, 0.114170998, 0)
+On.Size = UDim2.new(0, 29, 0, 20)
+On.Font = Enum.Font.SourceSans
+On.Text = "On"
+On.TextColor3 = Color3.fromRGB(0, 0, 0)
+On.TextSize = 14.000
+
+Off.Name = "Off"
+Off.Parent = OnOf
+Off.BackgroundColor3 = Color3.fromRGB(91, 0, 1)
+Off.Position = UDim2.new(0.149439126, 0, 0.526372731, 0)
+Off.Size = UDim2.new(0, 29, 0, 21)
+Off.Font = Enum.Font.SourceSans
+Off.Text = "Off"
+Off.TextColor3 = Color3.fromRGB(0, 0, 0)
+Off.TextSize = 14.000
